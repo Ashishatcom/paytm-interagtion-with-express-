@@ -1,0 +1,27 @@
+'use strict';
+
+var PAYTM_STAG_URL = 'https://pguat.paytm.com';
+var PAYTM_PROD_URL = 'https://secure.paytm.in';
+var MID = 'YOUR_MID_KEY';
+var PAYTM_ENVIORMENT = 'TEST';   //PROD kae liyea
+var PAYTM_MERCHANT_KEY = 'YOUR_MERCHANT_KEY';
+var WEBSITE = 'WEBSTAGING';
+var CHANNEL_ID =  'WEB';
+var INDUSTRY_TYPE_ID = 'Retail';
+var PAYTM_FINAL_URL = 'YOUR_FINAL_URL';
+if (PAYTM_ENVIORMENT== 'TEST') {
+  PAYTM_FINAL_URL = 'YOUR_FINAL_URL';
+}else{
+  PAYTM_FINAL_URL = 'YOUR_FINAL_URL';
+}
+
+module.exports = {
+
+    MID: MID,
+    PAYTM_MERCHANT_KEY :PAYTM_MERCHANT_KEY,
+    PAYTM_FINAL_URL :PAYTM_FINAL_URL,
+    WEBSITE: WEBSITE,
+    CHANNEL_ID: CHANNEL_ID,
+    INDUSTRY_TYPE_ID: INDUSTRY_TYPE_ID
+
+};
